@@ -5,80 +5,52 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #b40000;
     color: #fff;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px 0;
 }
 
 nav {
-    background-color: #444;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
     display: flex;
     justify-content: center;
+    background-color: #ff1414;
+    flex-direction: wrap;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
+nav a {
     color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
 }
 
-main {
+nav a:hover {
+    background-color: #5e0000;
+}
+
+.container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 article {
-    width: 300px;
+    flex: 1 1 300px;
     background-color: #f4f4f4;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #3f0000;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-
-/* Adicionando informações sobre Flexbox */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-article {
-    flex: 1 1 300px;
-    margin: 10px;
-}
-
-/* Flex container */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-/* Flex item */
-article {
-    flex: 1 1 300px;
-    margin: 10px;
-}
-
-/* Eixos */
-/* O eixo principal é o eixo horizontal (linha principal) */
-/* O eixo secundário é o eixo vertical (linha transversal) */
